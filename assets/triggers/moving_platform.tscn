@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://l02xchdltkhf"]
+
+[sub_resource type="TileSet" id="TileSet_2j2o0"]
+tile_size = Vector2i(32, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r2ad8"]
+
+[node name="MovingPlatform" type="Node2D"]
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="AnimatableBody2D"]
+tile_set = SubResource("TileSet_2j2o0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+shape = SubResource("RectangleShape2D_r2ad8")

@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bux0ownex42co"]
+
+[ext_resource type="Texture2D" uid="uid://ht1rsfbn7k2i" path="res://assets/art/Tiles/WaterTiles.png" id="1"]
+
+[node name="Foreground" type="Node2D"]
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+texture_filter = 1
+repeat_size = Vector2(128, 0)
+autoscroll = Vector2(30, 0)
+repeat_times = 12
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(-599, 320)
+texture = ExtResource("1")

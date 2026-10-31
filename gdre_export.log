@@ -1,0 +1,39 @@
+GDRE Tools v2.7.4
+Fedora Linux 44 (KDE Plasma Desktop Edition), NVIDIA GeForce RTX 3050 Laptop GPU, vulkan
+Opening file: ~/Загрузки/proto-pogo.exe
+Loaded 84 imported files
+WARNING: No valid assembly file 'Platformer_Proto.dll' found in any directory in /home/cybergoose/Загрузки and no C# files found, assuming it's not a C# project
+   at: load_project_dotnet_assembly (modules/gdsdecomp/utility/gdre_settings.cpp:2957)
+Detected Engine Version: 4.5.1
+Detected Bytecode Revision: 4.5.0-stable (ebc36a7)
+Verified 172 files, no errors detected!
+setting "Create lossless copy" set to true
+setting "Force lossless images" set to true
+setting "Add imports to git repo" set to true
+setting "Add imports to git repo" set to false
+Extracted 172 files, no errors detected!
+Saved project config.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     12
+Scripts not decompiled:                 0
+Imported resources for export session:  84
+Successfully converted:                 84
+Lossy:                                  1
+Rewrote metadata:                       61
+Non-importable conversions:             0
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.5.1 to edit the project.
+
+*******************************************************************************
+

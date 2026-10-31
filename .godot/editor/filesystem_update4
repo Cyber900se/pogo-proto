@@ -1,0 +1,10 @@
+res://assets/scenes/levels/level_1.tscn
+res://assets/scenes/levels/Main.tscn
+res://assets/entities/player.tscn
+res://assets/entities/player.gd
+res://assets/scripts/classes/level_data.gd
+res://assets/scripts/managers/progress.gd
+res://assets/entities/camera.gd
+res://assets/scripts/classes/level.gd
+res://assets/scripts/managers/LevelManager.gd
+res://assets/entities/camera_limit_manager.gd

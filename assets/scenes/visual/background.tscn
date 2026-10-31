@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgxiea54migde"]
+
+[ext_resource type="Texture2D" uid="uid://cb0dchgyxg5ey" path="res://assets/art/Background/Day/Background.png" id="1"]
+
+[node name="Background" type="Node2D"]
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(-487, -115)
+scale = Vector2(1, 0.997)
+texture = ExtResource("1")
