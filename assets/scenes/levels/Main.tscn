@@ -8,7 +8,6 @@
 script = ExtResource("2")
 level_id = 1
 level_name = "Level One"
-level_unlocked = true
 level_path = "levels/level_1"
 metadata/_custom_type_script = "uid://dh2gn38xf22dd"
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://b8cae6ey4nv1s"]
+[gd_scene format=3 uid="uid://b8cae6ey4nv1s"]
 
 [ext_resource type="Script" uid="uid://iiwxye28r336" path="res://assets/scenes/levels/path_follow_2d.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://bdgm3qovfv22" path="res://assets/art/Tiles/Tileset.png" id="2"]
@@ -12,20 +12,20 @@ point_count = 4
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sfv5u"]
 size = Vector2(96, 22)
 
-[node name="Path2D" type="Path2D"]
+[node name="Path2D" type="Path2D" unique_id=1549118176]
 curve = SubResource("Curve2D_u4b5a")
 
-[node name="PathFollow2D" type="PathFollow2D" parent="."]
+[node name="PathFollow2D" type="PathFollow2D" parent="." unique_id=870694681]
 position = Vector2(349, -901)
 script = ExtResource("1")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="PathFollow2D"]
+[node name="StaticBody2D" type="StaticBody2D" parent="PathFollow2D" unique_id=1923983230]
 
-[node name="Sprite2D" type="Sprite2D" parent="PathFollow2D/StaticBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="PathFollow2D/StaticBody2D" unique_id=1132569817]
 texture = ExtResource("2")
 region_enabled = true
 region_rect = Rect2(223.48244, 166.92108, 96.77138, 25.127579)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/StaticBody2D" unique_id=976825266]
 position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_sfv5u")
