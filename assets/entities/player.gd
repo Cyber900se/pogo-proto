@@ -102,22 +102,22 @@ func _physics_process(delta: float) -> void:
 		velocity.y += gravity * delta
 
 	if grounded or is_wall_attached:
-		var mouse_pos = get_global_mouse_position()
-		var to_mouse = (mouse_pos - global_position).normalized()
+		var mouse_pos := get_global_mouse_position()
+		var to_mouse := (mouse_pos - global_position).normalized()
 		var target_angle = clamp(to_mouse.angle_to(Vector2.UP), deg_to_rad( - max_tilt_deg), deg_to_rad(max_tilt_deg))
 		current_angle = lerp_angle(current_angle, - target_angle, delta * tilt_speed_ground)
 
-		var pivot_local = ground_pivot_offset
-		var pivot_before = global_transform * pivot_local
+		var pivot_local: Vector2 = ground_pivot_offset
+		var pivot_before: Vector2 = global_transform * pivot_local
 		rotation = current_angle
-		var pivot_after = global_transform * pivot_local
+		var pivot_after: Vector2 = global_transform * pivot_local
 		global_position += (pivot_before - pivot_after)
 	else:
 		current_angle += Input.get_axis("spin_left", "spin_right") * tilt_speed_air * delta
 		current_angle = wrapf(current_angle, -PI, PI)
 		rotation = current_angle
 
-	var can_charge = grounded or is_wall_attached
+	var can_charge := grounded or is_wall_attached
 	if is_charging and not can_charge:
 		is_charging = false
 		charge = 0.0
@@ -156,10 +156,10 @@ func _handle_collision_events() -> void:
 	var found_wall := false
 	var wall_n := Vector2.ZERO
 	for i in range(get_slide_collision_count()):
-		var col = get_slide_collision(i)
+		var col := get_slide_collision(i)
 		if not col:
 			continue
-		var n = col.get_normal()
+		var n := col.get_normal()
 		if abs(n.x) > WALL_MIN_NORMAL_X and abs(n.y) < WALL_MAX_NORMAL_Y:
 			found_wall = true
 			wall_n = n
@@ -210,7 +210,7 @@ func _jump() -> void:
 	ground_collider_prev_pos = Vector2.ZERO
 
 func _update_compression() -> void:
-	var squash_offset = SQUASH_PER_CHARGE * charge
+	var squash_offset := SQUASH_PER_CHARGE * charge
 	top_sprite.position.y = bottom_sprite.position.y - sprite_base_height_offset + squash_offset
 
 func _reset_sprites() -> void:

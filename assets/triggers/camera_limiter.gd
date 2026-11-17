@@ -5,12 +5,12 @@ class_name CameraLimiter
 enum LimitX{NONE, LEFT, RIGHT}
 enum LimitY{NONE, TOP, BOTTOM}
 
-const MAX_VAL = 100000
+const MAX_VAL := 100000
 
 @export var limit_x: LimitX = LimitX.NONE
 @export var limit_y: LimitY = LimitY.NONE
 
-@onready var marker = $LimitPosition
+@onready var marker := $LimitPosition
 
 func get_limit_top():
 	if limit_y != LimitY.TOP:

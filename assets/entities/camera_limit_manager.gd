@@ -2,11 +2,11 @@ extends Node2D
 
 class_name CameraLimitManager
 
-@export var limit_transition_speed = 3
+@export var limit_transition_speed := 3
 
 @onready var camera: Camera2D = get_parent()
 
-const MAX_LIMIT = 100000
+const MAX_LIMIT := 100000
 
 var camera_bounds_x_min
 var camera_bounds_x_max
