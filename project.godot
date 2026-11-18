@@ -27,6 +27,7 @@ Progress="*uid://cf1wkx2kbafx"
 [display]
 
 window/stretch/mode="canvas_items"
+display_server/driver.linuxbsd="wayland"
 window/vsync/vsync_mode=0
 
 [dotnet]
