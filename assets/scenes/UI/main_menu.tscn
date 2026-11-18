@@ -1,12 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://dfdow0vordip0"]
+[gd_scene format=3 uid="uid://dfdow0vordip0"]
 
 [ext_resource type="Script" uid="uid://8h456rnsnwwb" path="res://assets/scenes/UI/main_menu.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://djf5jfxb1axyv" path="res://assets/art/Background/Night/Background.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://5xinqjwq4vd7" path="res://assets/art/Background/Night/Background.png" id="2"]
 
 [sub_resource type="SystemFont" id="SystemFont_5jstl"]
 subpixel_positioning = 0
 
-[node name="MainMenu" type="Control"]
+[node name="MainMenu" type="Control" unique_id=220977899]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -15,14 +15,14 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1908290990]
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("2")
 stretch_mode = 5
 
-[node name="MarginContainer" type="MarginContainer" parent="TextureRect"]
+[node name="MarginContainer" type="MarginContainer" parent="TextureRect" unique_id=1807747207]
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
@@ -37,12 +37,12 @@ theme_override_constants/margin_top = 32
 theme_override_constants/margin_right = 32
 theme_override_constants/margin_bottom = 23
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/MarginContainer" unique_id=870026442]
 layout_mode = 2
 size_flags_vertical = 8
 theme_override_constants/separation = 32
 
-[node name="Label" type="Label" parent="TextureRect/MarginContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="TextureRect/MarginContainer/VBoxContainer" unique_id=2054793184]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
@@ -51,13 +51,13 @@ theme_override_font_sizes/font_size = 50
 text = "POGO ROBO PROTO"
 horizontal_alignment = 1
 
-[node name="Play" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
+[node name="Play" type="Button" parent="TextureRect/MarginContainer/VBoxContainer" unique_id=1503430899]
 custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
 size_flags_horizontal = 4
 text = "PLAY"
 
-[node name="Quit" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
+[node name="Quit" type="Button" parent="TextureRect/MarginContainer/VBoxContainer" unique_id=137896191]
 custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
 size_flags_horizontal = 4

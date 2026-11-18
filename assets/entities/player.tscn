@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://blnxmgiyvggbw"]
 
-[ext_resource type="Script" uid="uid://dnid6bppr7x2u" path="res://assets/entities/player.gd" id="1_12tmk"]
-[ext_resource type="Texture2D" uid="uid://hlneqj2nnpxd" path="res://assets/art/Character/character_bottom.png" id="2_ixvt8"]
-[ext_resource type="Texture2D" uid="uid://g0ye30fysg86" path="res://assets/art/Character/character_top.png" id="3_wiayc"]
+[ext_resource type="Script" uid="uid://cfv25ukt0q48m" path="res://assets/entities/player.gd" id="1_12tmk"]
+[ext_resource type="Texture2D" uid="uid://c4ggc3jbdj2ob" path="res://assets/art/Character/character_bottom.png" id="2_ixvt8"]
+[ext_resource type="Texture2D" uid="uid://cmhqgwf65f4aa" path="res://assets/art/Character/character_top.png" id="3_wiayc"]
 [ext_resource type="Script" uid="uid://dqyvl7r4ghxnh" path="res://assets/entities/camera.gd" id="4_nc8pj"]
-[ext_resource type="Script" uid="uid://dr0kcobxr8l0r" path="res://assets/entities/camera_limit_manager.gd" id="5_jsamf"]
+[ext_resource type="Script" uid="uid://cmes47royaciw" path="res://assets/entities/camera_limit_manager.gd" id="5_jsamf"]
 [ext_resource type="Script" uid="uid://u4k1tdqx5svi" path="res://assets/entities/player_interaction.gd" id="6_ftfp5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rfe5m"]
