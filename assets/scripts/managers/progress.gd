@@ -2,7 +2,7 @@ extends Node
 
 const SAVE_PATH := "user://progress.cfg"
 
-var completed: Dictionary = {}       # {level_id: true}
+var completed: Dictionary = {}
 var unlocked: Dictionary = {1: true}
 
 func _ready() -> void:
@@ -16,7 +16,7 @@ func is_unlocked(level_id: int) -> bool:
 
 func complete_level(level_id: int) -> void:
 	completed[level_id] = true
-	unlocked[level_id + 1] = true    # предполагает последовательные id
+	unlocked[level_id + 1] = true
 	save_progress()
 
 func save_progress() -> void:

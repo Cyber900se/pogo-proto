@@ -18,17 +18,17 @@ func load_level(level_id: int) -> bool:
 	await unload_level()
 
 	if not is_instance_valid(main_scene):
-		push_error("LevelManager: main_scene не задан")
+		push_error("LevelManager: main_scene not set")
 		return false
 
 	var level_data := get_level_data_by_id(level_id)
 	if not level_data:
-		push_error("LevelManager: нет уровня с id %d" % level_id)
+		push_error("LevelManager: no level matching id %d" % level_id)
 		return false
 
 	var level_path := "res://assets/scenes/%s.tscn" % level_data.level_path
 	if not ResourceLoader.exists(level_path):
-		push_error("LevelManager: нет файла %s" % level_path)
+		push_error("LevelManager: file %s not found" % level_path)
 		return false
 
 	var packed := load(level_path) as PackedScene
@@ -37,7 +37,7 @@ func load_level(level_id: int) -> bool:
 
 	var instance := packed.instantiate()
 	if not instance is Level:
-		push_error("LevelManager: корень сцены %s не Level" % level_path)
+		push_error("LevelManager: scene root %s not Level" % level_path)
 		instance.queue_free()
 		return false
 

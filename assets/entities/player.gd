@@ -241,7 +241,6 @@ func _check_if_on_ground() -> bool:
 		if not col:
 			continue
 
-		# Только поверхности, похожие на пол (стены и потолок не считаются)
 		if col.get_normal().dot(Vector2.UP) < FLOOR_MIN_DOT:
 			continue
 
@@ -270,7 +269,7 @@ func handle_danger() -> void:
 	can_control = false
 	velocity = Vector2.ZERO
 	collider.set_deferred("disabled", true)
-	await get_tree().create_timer(1.0).timeout
+	await get_tree().create_timer(0.4).timeout
 	reset_player()
 
 func reset_player() -> void:

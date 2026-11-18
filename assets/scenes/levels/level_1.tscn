@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://dfhlmx2yobd40"]
 
 [ext_resource type="PackedScene" uid="uid://cgxiea54migde" path="res://assets/scenes/visual/background.tscn" id="1"]
-[ext_resource type="Texture2D" uid="uid://bdgm3qovfv22" path="res://assets/art/Tiles/Tileset.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://ujqnq0fbslmt" path="res://assets/art/Tiles/Tileset.png" id="2"]
 [ext_resource type="PackedScene" uid="uid://blnxmgiyvggbw" path="res://assets/entities/player.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://cme8yvlria1wi" path="res://assets/triggers/danger_zone.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://bux0ownex42co" path="res://assets/scenes/visual/foreground.tscn" id="5"]
@@ -229,7 +229,7 @@ shape = SubResource("RectangleShape2D_go7sj")
 visible = false
 
 [node name="PlayerStart" type="Node2D" parent="." unique_id=555137406]
-position = Vector2(1073, 448)
+position = Vector2(1096, 448)
 
 [node name="Foreground" parent="." unique_id=436425959 instance=ExtResource("5")]
 z_index = 2
